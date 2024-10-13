@@ -9,7 +9,6 @@ router.post("/signup", async (req,res)=>{
     try{
         const user = new UserModel(userData)
         const newuser = await user.save()
-        console.log(newuser)
         res.send(newuser)
     } catch(err){
         res.status(500).send({message: err.message})
@@ -17,7 +16,6 @@ router.post("/signup", async (req,res)=>{
 })
 router.post("/login", async (req,res)=>{
     let uname = req.body.username
-    console.log(uname)
     UserModel.findOne({username: uname} ).
     then((user)=>{
         if(!user) {

@@ -1,2 +1,0 @@
-username: chipmunk
-password: password123

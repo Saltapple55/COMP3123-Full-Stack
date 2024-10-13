@@ -2,7 +2,6 @@
 const express = require("express")
 
 const BookModel = require("../models/books") //a mongoose model can use mongoose query methods
-const Book = require("../models/books")
 const routes = express.Router()
 
 //Get All Books
