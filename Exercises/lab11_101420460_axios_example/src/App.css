@@ -28,7 +28,12 @@ h3{
 }
 .User{
   background-color: turquoise;
-
+}
+h1{
+  background-color: lightgreen;
+}
+.Labels{
+  align-items: end;
 }
 
 .App-link {

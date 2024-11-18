@@ -49,7 +49,7 @@ export default class PersonList extends Component {
     render() {
     return (
       <div>
-        <h3 >UserList</h3>
+        <h1 >UserList</h1>
          {
             this.state.users.map((user)=>
               <Container key={user.id} className='User'>
